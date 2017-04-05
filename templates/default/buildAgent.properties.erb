@@ -59,7 +59,7 @@ system.<%= key %>=<%= value %>
 <%- end %>
 
 # Environment Variables
-<%- unless @env_properties.empty? or @env_properties.nil? %>
+<%- unless @env_properties.nil? %>
 <%- @env_properties.to_hash.sort.each do |key,value| %>
 env.<%= key %>=<%= value %>
 <%- end %>
